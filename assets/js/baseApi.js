@@ -11,7 +11,7 @@ $.ajaxPrefilter(function(options) {
 
   // 全局挂载complete回调函数
   options.complete = function(res) {
-    console.log(res);
+    // console.log(res);
     if (
       res.responseJSON.code === 1 &&
       res.responseJSON.message === "身份认证失败！"
